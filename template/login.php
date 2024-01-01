@@ -22,19 +22,18 @@ $title = "Login";
   <!-- Jumbotron -->
         <div class="container py-4">
           <div class="row g-0 align-items-center">
-            <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="card cascading-right" style="
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="card cascading-center" style="
                     background: hsla(0, 0%, 100%, 0.55);
-                    backdrop-filter: blur(30px);
-                    ">
+                    backdrop-filter: blur(30px);">
                 <div class="card-body p-5 shadow-5 text-center">
                   <h2 class="fw-bold mb-5">Login </h2>
                   <form action="#" method="post">
-                    <!-- Email input -->
+                      <!-- Email input -->
                     <div class="form-outline mb-4">
-                    <input type="email" id="form3Example3" class="form-control" name="email">
-                    <label class="form-label" for="form3Example3">Email address</label>
-                  </div>
+                      <input type="email" id="form3Example3" class="form-control" name="email">
+                      <label class="form-label" for="form3Example3">Email address</label>
+                    </div>
     
                   <!-- Password input -->
                   <div class="form-outline mb-4">
@@ -56,15 +55,16 @@ $title = "Login";
               </button>
 
               <!-- Register buttons -->
-              <p>Don't have an account? <a href="/decor/template/registration.php" class="link-info">Register here</a></p>
+              <p>Don't have an account? <a href="/decor/template/registration.php" class="link-info">Register here</a></p><br>
+              <p><a href="/decor/template/seller/sellerRegister.php"  class="link-info">Are you a seller?</a></p>
 
             </form>
           </div>
         </div>
       </div>
 
-            <div class="col-lg-6 mb-5 mb-lg-0">
-              <img src="../images/image4.jpg" class="w-50 rounded-4 shadow-4" alt="...">
+            <div class="col-lg-8 mb-7 mb-lg-0">
+              <img src="../images/image31.jpg" class="w-50 rounded-4 shadow-4" alt="...">
             </div>
         </div>
         <div>
@@ -79,13 +79,13 @@ $title = "Login";
   // Request
   if ($_SERVER['REQUEST_METHOD']=="POST") {
     // Add user model
-      include('../model/user.php');
-      $user_model=new User();
+      include('../model/auth.php');
+      $auth_model=new Auth();
 
       $email=$_REQUEST['email'];
       $password=$_REQUEST['password'];
 
       // insert
-      $user_model->login($email,$password);
+      $auth_model->login($email,$password);
   }
 ?>

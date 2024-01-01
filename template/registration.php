@@ -65,7 +65,7 @@ $title = "Register";
               </div>
               <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                <img src="../images/image4.jpg"
+                <img src="../images/image41.jpg"
                    alt="Sample image" height="500px">
 
               </div>
@@ -85,7 +85,8 @@ $title = "Register";
    if ($_SERVER['REQUEST_METHOD']=="POST") {
     // Add user model
         include('../model/user.php');
-        $user_model=new User();
+        include('../Database/Db_connect.php');
+        $user_model=new User(new DB_CON());
         $name=$_REQUEST['name'];
         $email=$_REQUEST['email'];
         $password=$_REQUEST['password'];
