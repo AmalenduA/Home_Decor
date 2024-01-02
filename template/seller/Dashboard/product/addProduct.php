@@ -29,7 +29,7 @@
                 </div>
                 <div class="mt-3">
                     <label for="">Product image</label>
-                    <input type="text" name="image" class="form-control" placeholder="formate:/decor/images/your image">
+                    <input type="file" class=" form-file form-control" name="product_image"  accept=".png,.jpeg">
                 </div>
                 <div class="mt-3">
                     <label for="">Product description</label>
@@ -54,8 +54,13 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $product_name=$_REQUEST['product_name'];
     $category_id=$_REQUEST['id'];
     $product_price=$_REQUEST['product_price'];
-    $product_image=$_REQUEST['image'];
     $product_description=$_REQUEST['product_description'];
+
+    $prdFilename=basename($_FILES['product_image']['name']);
+    $targetDir="./uploads/".$prdFilename;
+    move_uploaded_file($_FILES['product_image']['tmp_name'], $targetDir);
+    $product_image=$prdFilename;
+
     
     $res= $product_model->addProduct($product_name,$product_price,$product_image,$product_description,$category_id);
 

@@ -1,16 +1,3 @@
- <?php 
-// session_start();
-// $uri=basename($_SERVER["REQUEST_URI"]);
-// if($uri== "login.php"|| $uri== "registration.php"|| $uri== "sellerRegister.php"){
-
-// } else if(!isset($_SESSION['logined'])){
-//     header("location:/decor/template/login.php");
-//     exit();
-// }else  if ($_SESSION['role']!=='seller') {
-//   header("Location:/decor/template/seller/accessdenied.php");
-//   exit();
-// }
-?> 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-success">
   <div class="container-fluid">
@@ -37,6 +24,7 @@
         </li>
       </ul>
       <form class="d-flex">
+      <button class="btn btn-light"><a style="color:green" href="/decor/template/logout.php">log out</a> </button>
       </form>
     </div>
   </div>

@@ -1,0 +1,19 @@
+user
+    id pk auto_increment
+    name (varchar 30)
+    email(varchar 50) unique
+    password (text)
+    role (varchar 20)
+
+
+category
+    id pk auto_increment
+    category_name (varchar 20)
+    category_Description (varchar 20)
+
+product
+    id pk auto_increment
+    category_id fk (category id)
+    product_name (varchar 20)
+    product_price (int 20)
+    
