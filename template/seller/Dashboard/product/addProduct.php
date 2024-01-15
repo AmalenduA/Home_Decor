@@ -4,7 +4,7 @@
 
     <div class="content-box shadow rounded border">
         <div class="container">
-            <form method="post">
+            <form method="post" enctype="multipart/form-data">
                 <div class="mt-3">
                     <label for="">Product Name</label>
                     <input type="text" name="product_name" class="form-control">

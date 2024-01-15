@@ -10,12 +10,12 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/decor/index.php">Home</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Home decor</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="#" tabindex="-1" >Garden decor</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link " href="#" tabindex="-1" >About</a>
         </li>

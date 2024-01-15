@@ -19,6 +19,7 @@ class Auth
 
             session_start();
             $_SESSION['logined']=true;
+            $_SESSION['user_id']=$res->user_id;
             $_SESSION['user_name']=$res->name;
             $_SESSION['role']=$res->role;
             if($res->role=="seller"){

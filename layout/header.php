@@ -11,10 +11,10 @@
           <a class="nav-link active" aria-current="page" href="/decor/index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Home decor</a>
+          <a class="nav-link" href="/decor/template/login.php">Home decor</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="/decor/template/customer/dashboard/gardenDecor.php" tabindex="-1" >Garden decor</a>
+          <a class="nav-link " href="/decor/template/login.php" tabindex="-1" >Garden decor</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="#" tabindex="-1" >Contact us</a>
