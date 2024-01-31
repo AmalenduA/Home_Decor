@@ -1,8 +1,5 @@
 <?php 
 
-// Database connect 
-//include_once('decor/database/Db_connect.php');
-
 class User
 {
     var $_db;

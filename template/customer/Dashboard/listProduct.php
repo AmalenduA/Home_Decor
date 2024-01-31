@@ -12,7 +12,7 @@ $products=$product_model->fetchProduct();?>
         <div class="items">
 <?php foreach($products as $row){?>
     <div class="card" style="width: 10rem; height: 400px;">
-        <img class="card-img-top" src="<?= $row['image'] ?>" alt="Card image cap">
+        <img class="card-img-top" src="/decor/template/seller/dashboard/product/uploads/<?= $row['image'] ?>" alt="Card image cap">
         <div class="card-body">
             <h6 class="card-title"><?= $row['product_name'] ?></h6>
             <p class="card-text">Rs.<?= $row['price'] ?></p>
